@@ -1,0 +1,13 @@
+.keg {
+  padding: 20px;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.keg h1, h2, h3 {
+  margin: 0;
+}
+
+.keg .btn {
+  margin-right: 10px;
+}

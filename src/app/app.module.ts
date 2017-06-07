@@ -6,9 +6,15 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
+
 import { AppComponent } from './app.component';
 import { KegComponent } from './keg/keg.component';
 import { IndexComponent } from './index/index.component';
+import { KegFormComponent } from './keg-form/keg-form.component';
+import { AddKegComponent } from './add-keg/add-keg.component';
+import { EditKegComponent } from './edit-keg/edit-keg.component';
+import { AdminComponent } from './admin/admin.component';
+import { routing } from './app.routing';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -21,14 +27,19 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     KegComponent,
-    IndexComponent
+    IndexComponent,
+    KegFormComponent,
+    AddKegComponent,
+    EditKegComponent,
+    AdminComponent
   ],
   imports: [
     AngularFireDatabaseModule,
     AngularFireModule.initializeApp(firebaseConfig),
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]

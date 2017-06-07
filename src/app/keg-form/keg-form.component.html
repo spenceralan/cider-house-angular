@@ -1,0 +1,29 @@
+<form>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group">
+        <label for="keg-brand">Brand</label>
+        <input class="form-control" name="keg-brand" #brand>
+      </div>
+      <div class="form-group">
+        <label for="keg-name">Name</label>
+        <input class="form-control" name="keg-name" #name>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="keg-price">Price</label>
+        <input class="form-control" name="keg-price" #price>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="keg-alcohol-content">Alcohol Content</label>
+        <input class="form-control" name="keg-alcohol-content" #content>
+      </div>
+    </div>
+  </div>
+    <a class="btn btn-default" (click)="save(brand, name, price, content)">Submit</a>
+  </form>

@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+.jumbotron a {
+  color: #000;
+}
+
+.jumbotron a:hover, .jumbotron a:active, .jumbotron a:visited, .jumbotron a:link {
+  text-decoration: none;
+  color: #000;
+}
