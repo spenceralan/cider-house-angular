@@ -13,7 +13,6 @@ export class AddKegComponent implements OnInit {
   constructor(private kegService: KegService) { }
 
   saveKeg(keg) {
-    console.log(keg);
     this.kegService.addKeg(keg);
   }
 
