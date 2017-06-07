@@ -13,6 +13,15 @@ export class KegService {
     return this.kegs;
   }
 
+  getKegByID(id){
+    return this.database.object('/kegs/' + id);
+  }
+
+  updateVolume(keg){
+    let dBkeg = this.getKegByID(keg.$key);
+    dBkeg.update({ounces: keg.ounces});
+  }
+
   addKeg(newKeg: Keg) {
     this.kegs.push(newKeg);
   }

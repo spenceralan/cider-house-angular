@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Keg } from '../keg/keg.model';
+import { routing } from '../app.routing';
 
 
 @Component({

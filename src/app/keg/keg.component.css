@@ -1,7 +1,11 @@
 .keg {
+  background-color: #eee;
   padding: 20px;
+  margin: 20px 0 20px 10px;
   display: inline-block;
-  margin: 20px 0;
+  width: 45%;
+  min-height: 250px;
+  overflow: hidden;
 }
 
 .keg h1, h2, h3 {
