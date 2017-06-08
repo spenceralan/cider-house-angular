@@ -22,13 +22,14 @@ export class KegComponent implements OnInit {
 
   editKegPage(keg) {
     this.router.navigate(['keg', keg.$key]);
-    console.log(keg.$key);
   }
 
   makeSale(keg: Keg, ounces: number) {
-    console.log(keg.ounces)
-    console.log(ounces)
     keg.ounces = Number(keg.ounces) - Number(ounces);
     this.kegService.updateVolume(keg);
+  }
+  kaisFunction(keg) {
+    const totalOunces = 1984
+    return ((keg.ounces/totalOunces)*100).toFixed();
   }
 }

@@ -1,4 +1,9 @@
+<h1>{{kegObject?.name}}</h1>
 <div class="edit-keg">
   <h2>Edit Keg</h2>
-  <app-keg-form></app-keg-form>
+  <app-keg-form
+  [keg]="kegObject"
+  (updateKeg)="updateKeg($event)"
+  (deleteKeg)="deleteKeg($event)"
+  ></app-keg-form>
 </div>

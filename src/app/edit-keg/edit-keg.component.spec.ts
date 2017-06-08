@@ -1,5 +1,4 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { EditKegComponent } from './edit-keg.component';
 
 describe('EditKegComponent', () => {

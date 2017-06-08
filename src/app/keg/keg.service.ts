@@ -18,12 +18,22 @@ export class KegService {
   }
 
   updateVolume(keg){
-    console.log(keg);
     let dBkeg = this.getKegByID(keg.$key);
     dBkeg.update({ounces: keg.ounces});
+    console.log(dBkeg);
+  }
+
+  updateKeg(keg){
+    let dBkeg = this.getKegByID(keg.$key);
+    dBkeg.update({name: keg.name, brand: keg.brand, price: keg.price, alcoholContent: keg.alcoholContent});
   }
 
   addKeg(newKeg: Keg) {
     this.kegs.push(newKeg);
+  }
+
+  deleteKeg(keg) {
+    let dBkeg = this.getKegByID(keg.$key);
+    dBkeg.remove();
   }
 }

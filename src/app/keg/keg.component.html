@@ -3,6 +3,7 @@
   <h3>{{keg.brand}}</h3>
   <h5>Price: ${{keg.price}}</h5>
   <h5>Alcohol Content: {{keg.alcoholContent}}%</h5>
+  <h5>Volume: {{kaisFunction(keg)}}% </h5>
   <a class="btn btn-default" (click)="makeSale(keg, 16)">16oz</a>
   <a class="btn btn-default" (click)="makeSale(keg, 32)">32oz</a>
   <a class="btn btn-default" (click)="makeSale(keg, 64)">64oz</a>
