@@ -1,15 +1,20 @@
 .keg {
   background-color: #eee;
   padding: 20px;
-  margin: 20px 0 20px 10px;
+  margin: 20px 5px 20px 5px;
   display: inline-block;
-  width: 45%;
+  width: 49%;
   min-height: 250px;
   overflow: hidden;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .keg h1, h2, h3 {
   margin: 0;
+  color: #333;
 }
 
 .keg .btn {

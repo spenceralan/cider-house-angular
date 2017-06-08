@@ -15,6 +15,7 @@ import { AddKegComponent } from './add-keg/add-keg.component';
 import { EditKegComponent } from './edit-keg/edit-keg.component';
 import { AdminComponent } from './admin/admin.component';
 import { routing } from './app.routing';
+import { FullnessPipe } from './fullness.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -31,7 +32,8 @@ export const firebaseConfig = {
     KegFormComponent,
     AddKegComponent,
     EditKegComponent,
-    AdminComponent
+    AdminComponent,
+    FullnessPipe
   ],
   imports: [
     AngularFireDatabaseModule,

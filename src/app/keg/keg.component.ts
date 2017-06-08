@@ -3,6 +3,8 @@ import { KegService } from './keg.service';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 import { Keg } from './keg.model';
 import { Router } from '@angular/router';
+import { FullnessPipe } from '../fullness.pipe';
+
 
 @Component({
   selector: 'app-keg',
@@ -13,6 +15,7 @@ import { Router } from '@angular/router';
 
 export class KegComponent implements OnInit {
   kegs: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
   constructor(private kegService: KegService, private router: Router) { }
 
   ngOnInit() {
