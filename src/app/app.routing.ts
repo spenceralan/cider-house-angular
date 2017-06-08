@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IndexComponent } from './index/index.component';
 import { AdminComponent } from './admin/admin.component';
 import { EditKegComponent } from './edit-keg/edit-keg.component';
+import { KegFormComponent } from './keg-form/keg-form.component';
 
 const appRoutes: Routes = [
   {

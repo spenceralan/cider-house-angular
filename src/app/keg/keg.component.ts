@@ -13,7 +13,6 @@ import { Router } from '@angular/router';
 
 export class KegComponent implements OnInit {
   kegs: FirebaseListObservable<any[]>;
-
   constructor(private kegService: KegService, private router: Router) { }
 
   ngOnInit() {
@@ -28,8 +27,14 @@ export class KegComponent implements OnInit {
     keg.ounces = Number(keg.ounces) - Number(ounces);
     this.kegService.updateVolume(keg);
   }
+
   kaisFunction(keg) {
     const totalOunces = 1984
     return ((keg.ounces/totalOunces)*100).toFixed();
+  }
+
+  pintsRemaining(keg) {
+    const pint = 16;
+    return (keg.ounces/pint);
   }
 }

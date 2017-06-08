@@ -29,6 +29,7 @@ export class KegFormComponent implements OnInit {
   }
 
   delete(keg) {
+    this.router.navigate(['admin']);
     this.deleteKeg.emit(keg);
   }
 

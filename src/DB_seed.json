@@ -1,0 +1,109 @@
+{
+  "kegs" : {
+    "-Km3fsdUfS_eBYc95UCV" : {
+      "alcoholContent" : "6.9",
+      "brand" : "Crispin",
+      "name" : "Artisanal Reserve Landsdowne",
+      "ounces" : 1984,
+      "price" : "5"
+    },
+    "-Km3hIjtz6Or4UTkXfc8" : {
+      "alcoholContent" : "4.5",
+      "brand" : "Fox Barrel",
+      "name" : "Pacific Pear Cider",
+      "ounces" : 1392,
+      "price" : "4"
+    },
+    "-Km3iEg7lRfrAkdHb4lR" : {
+      "alcoholContent" : "5",
+      "brand" : "Woodchuck",
+      "name" : "Amber",
+      "ounces" : 1984,
+      "price" : "6"
+    },
+    "-Km3iWpUc8f6JCduPSGA" : {
+      "alcoholContent" : "5.5",
+      "brand" : "Etienne Dupont",
+      "name" : "Cidre Bouche Brut de Normandie",
+      "ounces" : 1984,
+      "price" : "7"
+    },
+    "-Km3idJLztSIu9PUH9q-" : {
+      "alcoholContent" : "6.9",
+      "brand" : "Woodchuck",
+      "name" : "Farmhouse Select Original 91",
+      "ounces" : 1984,
+      "price" : "5"
+    },
+    "-Km3iiAT9xMTbUfbWBnT" : {
+      "alcoholContent" : "6.9",
+      "brand" : "Crispin",
+      "name" : "Stagger Lee",
+      "ounces" : 1968,
+      "price" : "4"
+    },
+    "-Km3ioqykhnG4VFgMxMC" : {
+      "alcoholContent" : "6.9",
+      "brand" : "Woodchuck",
+      "name" : "Private Reserve Ginger Cider",
+      "ounces" : 1920,
+      "price" : "5"
+    },
+    "-Km3iuAL9Hq5zATi1ozy" : {
+      "alcoholContent" : "6.5",
+      "brand" : "Crispin",
+      "name" : "Honey Crisp",
+      "ounces" : 1984,
+      "price" : "6"
+    },
+    "-Km3j-6K4yIgwqf1yH14" : {
+      "alcoholContent" : "5",
+      "brand" : "Ace",
+      "name" : "Pumpkin Hard Cider",
+      "ounces" : 1984,
+      "price" : "3"
+    },
+    "-Km3j6opgJ4SIE2eWhp6" : {
+      "alcoholContent" : "5.8",
+      "brand" : "Crispin",
+      "name" : "Browns Lane Natural Hard Apple Cider",
+      "ounces" : 1984,
+      "price" : "6"
+    },
+    "-Km3jG7zOfh3ahWX_MKq" : {
+      "alcoholContent" : "5.7",
+      "brand" : "Aspall",
+      "name" : "Perronelle's Blush English Draft Cider",
+      "ounces" : 1920,
+      "price" : "7"
+    },
+    "-Km3jMCpJVXGM7MtXyfa" : {
+      "alcoholContent" : "6.9",
+      "brand" : "Thirsty Cross",
+      "name" : "Scottish Cider",
+      "ounces" : 1968,
+      "price" : "6"
+    },
+    "-Km3jS5_rFGa7Xq41Ucf" : {
+      "alcoholContent" : "5",
+      "brand" : "Woodchuck",
+      "name" : "Winter Oak Aged Draft Cider",
+      "ounces" : 1920,
+      "price" : "5"
+    },
+    "-Km3jVhhFm8cPRyYg5dp" : {
+      "alcoholContent" : "6.9",
+      "brand" : "Crispin",
+      "name" : "The Saint",
+      "ounces" : 1952,
+      "price" : "7"
+    },
+    "-Km3ja6RCcepWWqAL0Wg" : {
+      "alcoholContent" : "5",
+      "brand" : "Samuel Smith's",
+      "name" : "Organic Cider",
+      "ounces" : 1984,
+      "price" : "8"
+    }
+  }
+}
