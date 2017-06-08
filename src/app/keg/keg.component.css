@@ -15,3 +15,14 @@
 .keg .btn {
   margin-right: 10px;
 }
+
+.fill-level-bar {
+  margin: 25px 0;
+  width: 100%;
+  border: 1px solid;
+  height: 10px;
+}
+
+.fill-level {
+  height: 100%;
+}

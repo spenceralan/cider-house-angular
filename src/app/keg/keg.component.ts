@@ -24,17 +24,41 @@ export class KegComponent implements OnInit {
   }
 
   makeSale(keg: Keg, ounces: number) {
-    keg.ounces = Number(keg.ounces) - Number(ounces);
+    let kegOunces = Number(keg.ounces);
+    let drinkOunces = Number(ounces);
+    if (drinkOunces > kegOunces) {
+      return;
+    } else {
+      keg.ounces = kegOunces - drinkOunces;
+      this.kegService.updateVolume(keg);
+    }
+  }
+
+  fillKeg(keg: Keg) {
+    const totalOunces = 1984
+    keg.ounces = totalOunces;
+    console.log(keg)
     this.kegService.updateVolume(keg);
   }
 
   kaisFunction(keg) {
     const totalOunces = 1984
-    return ((keg.ounces/totalOunces)*100).toFixed();
+    return ((keg.ounces/totalOunces)*100).toFixed() + "%";
   }
 
   pintsRemaining(keg) {
     const pint = 16;
     return (keg.ounces/pint);
+  }
+
+  color(keg) {
+    let pints = Number(this.pintsRemaining(keg))
+    if ( pints > 80 ) {
+      return "#5cb85c";
+    } else if ( pints > 40 ) {
+      return "#f0ad4e";
+    } else {
+      return "#d9534f";
+    }
   }
 }

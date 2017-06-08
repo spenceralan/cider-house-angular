@@ -3,9 +3,16 @@
   <h3>{{keg.brand}}</h3>
   <h5>Price: ${{keg.price}}</h5>
   <h5>Alcohol Content: {{keg.alcoholContent}}%</h5>
-  <h5>Volume: {{kaisFunction(keg)}}% </h5>
+  <h5>Volume: {{kaisFunction(keg)}}</h5>
   <h5>Pints Remaining: {{pintsRemaining(keg)}}</h5>
+  <div class="fill-level-bar">
+    <div class="fill-level"
+    [style.width]="kaisFunction(keg)"
+    [style.background-color]="color(keg)">
+    </div>
+  </div>
   <a class="btn btn-default" (click)="makeSale(keg, 16)">16oz</a>
   <a class="btn btn-default" (click)="makeSale(keg, 32)">32oz</a>
   <a class="btn btn-default" (click)="makeSale(keg, 64)">64oz</a>
+  <a class="btn btn-primary" (click)="fillKeg(keg)">Fill</a>
 </div>
