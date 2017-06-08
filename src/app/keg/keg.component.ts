@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { KegService } from './keg.service';
-import { FirebaseListObservable } from 'angularfire2/database';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 import { Keg } from './keg.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-keg',
@@ -13,10 +14,15 @@ import { Keg } from './keg.model';
 export class KegComponent implements OnInit {
   kegs: FirebaseListObservable<any[]>;
 
-  constructor(private kegService: KegService) { }
+  constructor(private kegService: KegService, private router: Router) { }
 
   ngOnInit() {
     this.kegs = this.kegService.getKegs();
+  }
+
+  editKegPage(keg) {
+    this.router.navigate(['keg', keg.$key]);
+    console.log(keg.$key);
   }
 
   makeSale(keg: Keg, ounces: number) {

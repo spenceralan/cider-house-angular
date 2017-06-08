@@ -18,6 +18,7 @@ export class KegService {
   }
 
   updateVolume(keg){
+    console.log(keg);
     let dBkeg = this.getKegByID(keg.$key);
     dBkeg.update({ounces: keg.ounces});
   }

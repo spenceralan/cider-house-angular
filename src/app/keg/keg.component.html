@@ -1,5 +1,5 @@
 <div class="keg" *ngFor="let keg of kegs | async">
-  <h2>{{keg.name}}</h2>
+  <h2 (click)="editKegPage(keg)">{{keg.name}}</h2>
   <h3>{{keg.brand}}</h3>
   <h5>Price: ${{keg.price}}</h5>
   <h5>Alcohol Content: {{keg.alcoholContent}}%</h5>
